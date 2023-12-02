@@ -10,12 +10,9 @@ body {
 }
 
 .container-header {
-  //maniculo o quadrado//
   display: flex;
-  align-items: center;
-  // border: 3px solid red;
+  align-items: center; 
   width: 100vw;
-  // max-width: 900px;
   height: 100vh;
   margin: 0 auto;
   padding: 9px;
@@ -23,25 +20,44 @@ body {
 
   .texto-principal {
     flex: 1;
-    // border: 3px solid red;
-    height: 300px;
-    width: 40%;
+    width: 45%;
+    z-index: 1;
+    // border: 2px solid red;
+    padding: 10px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
   }
 
   .image-container {
     flex: 1;
-    // border: 3px solid red;
-    // margin: 50px;
-    width: 500px;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
+    
     img {
       max-width: 100%;
-      
+      transform: scale(1.5);
+      transform-origin: top center;
+      // object-fit: cover;
     }
   }
+  
   .texto-na-frente {
     position: absolute;
     top: 50%;

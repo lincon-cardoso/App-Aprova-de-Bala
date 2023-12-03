@@ -1,28 +1,30 @@
 @media screen and (max-width: 500px) {
   .container-header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 92vh;
-    margin: 0 auto;
-    padding: 9px;
-    max-width: 1200px;
-    overflow: hidden;
+    position: relative;
 
     .image-container {
       flex: 1;
-        display: flex;
-    align-items: center;
-    justify-content: flex-start; // Adicionado para centralizar a imagem
-    // border: 2px solid red;
-    margin-top: 95px;
-
+      height: 600px;
+      width: 600px;
+      position: absolute;
+      top: -50px;
+      right: -250px;
+      
+      
       img {
-    //    transform: scale(0.5);
-    //   transform-origin:  top;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
       }
+    }
+
+    .texto-principal {
+      display: none;
+    }
+
+    .content {
+      text-align: center;
     }
   }
 }

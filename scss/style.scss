@@ -11,27 +11,31 @@ body {
 
 .container-header {
   display: flex;
-  align-items: center; 
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
   padding: 9px;
+  max-width: 1200px;
   overflow: hidden;
 
   .texto-principal {
     flex: 1;
-    width: 45%;
+    width: 35%;
     z-index: 1;
     // border: 2px solid red;
-    padding: 10px;
-
+    margin: 10px;
+    padding: 60px;
+   
     h1 {
       font-size: 30px;
       font-weight: 700;
       margin-bottom: 20px;
     }
-
+    
     p {
+      color: #acacac;
       margin-bottom: 20px;
     }
 
@@ -43,25 +47,25 @@ body {
   }
 
   .image-container {
-    flex: 1;
-    height: 100%;
+     flex: 1;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    
+    justify-content: flex-start; // Adicionado para centralizar a imagem
+    // border: 2px solid red;
+    margin-top: 95px;
     
     img {
-      max-width: 100%;
-      transform: scale(1.5);
-      transform-origin: top center;
+      // max-width: 100%;
+      transform: scale(1.6);
+      transform-origin: center top;
       // object-fit: cover;
     }
   }
-  
+
   .texto-na-frente {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-110%, -50%);
+    transform: translate(-130%, -50%);
   }
 }

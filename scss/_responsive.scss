@@ -10,8 +10,7 @@
       position: absolute;
       top: -50px;
       right: -250px;
-      
-      
+
       img {
         height: 100%;
         width: 100%;
@@ -20,9 +19,29 @@
     }
 
     .texto-principal {
-      display: none;
-    }
+      flex: 2;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      height: 650px;
+      justify-content: center;
+      align-items: center;
+      
 
+      
+
+      h1 {
+        font-size: 5px;
+      }
+      
+      p {
+        font-size: 10px;
+      }
+      
+      h2 {
+        font-size: 5px;
+      }
+    }
     .content {
       text-align: center;
     }
